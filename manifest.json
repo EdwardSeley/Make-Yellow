@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Make Yellow",
+    "description": "This extension turns ever selected item to the color yellow",
+    "version": "1.0",
+    
+    "content_scripts": [{
+    "js": ["jquery-3.2.1.js", "content.js"],
+    "css": ["style.css"],
+    "matches": ["<all_urls>"]
+    }],
+
+    "browser_action": {
+    "default_icon": "icon.png"
+    },
+
+    "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/"
+    ]
+}
